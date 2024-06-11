@@ -64,3 +64,54 @@
     div#formulario > p {
         font-size: .8em;
     }
+
+    form > div.campo{
+        background-color: #5f2c82;
+        width: 100%;
+        display: block;
+        height: 40px;
+        border-radius: 5px;
+        margin: 5px 0px; /* as margens de cima e de baixo 5px , e a da direita e esquerda 0px */
+
+    }
+    div.campo > label {
+        display: none; /* para que as etiquetas login e senha não apareçam */
+    }
+
+    form > input[type=submit]{
+        display: block; /* para que ocupe a linha inteira*/
+        font-size: 1em;
+        width: 100%; /* não pode ser 100vw, pq vw é da largura total da pagina e 100% é da largura do conteiner, do formulario , da div */
+        height: 40px;
+        background-color:#49a09d ;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer; /* vira uma maozinha */
+    }
+
+    form > input[type=submit]:hover{
+        background-color: #1c4646;
+    }
+
+    form > a.botao {
+        display: block;
+        text-align: center;
+        font-size: 1em;
+        width: 100%;
+        height: 40px;
+        background-color: #8aa7a6;
+        color:white;
+        border: 1px solid #8aa7a6;
+        border-radius: 5px;
+        text-decoration: none;
+        padding-top: 7px;
+        margin-top: 5px;
+    }
+    form > a.botao:hover{
+        background-color: #3c4949;
+    }
+
+    form > a.botao > span {
+        font-size: 0.8em;
+    }
