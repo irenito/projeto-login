@@ -34,11 +34,12 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        
         
         overflow: hidden; /* significa que tudo q estiver fora da borda será cortado */
         box-shadow: 0px 0px 10px black;
 
+        transform: translate(-50%,-50%);
         transition: width 0.3s, height .3s; /* animação qdo aumenta e diminui a tela */
         transition-timing-function: ease; /* dá uma suavizada qdo ocorre a transição pra tela grande e pequena */
     }
@@ -70,12 +71,41 @@
         width: 100%;
         display: block;
         height: 40px;
-        border-radius: 5px;
+        border-radius: 8px;
         margin: 5px 0px; /* as margens de cima e de baixo 5px , e a da direita e esquerda 0px */
 
     }
     div.campo > label {
         display: none; /* para que as etiquetas login e senha não apareçam */
+    }
+    div.campo > span {
+        color: white;
+        /*background-color: black; */
+        font-size: 2em;
+        width: 40px;
+        padding: 5px;
+    }
+    div.campo > i {
+        color: white;
+        /*background-color: black;*/
+        font-size: 2em;
+        width: 40px;
+        padding: 5px;
+    }
+    div.campo > input {
+        background-color: #49a09d;
+        font-size: 1em;
+        width: calc(100% - 39px);
+        height: 92%;
+        border: 0px;
+        border-radius: 8px;
+        
+        padding: 2px;
+        transform: translate(39px,-41px); /* todas as transform e transiçøes, colocar na ultima linha do seletor, no final , serve para evitar algumas incompatibilidades */
+
+    }
+    div.campo > input:focus-within { /*qdo eu for preencher os campos ele ficará branco*/
+        background-color: white;
     }
 
     form > input[type=submit]{
